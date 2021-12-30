@@ -1,0 +1,50 @@
+package exercise;
+import java.util.Scanner;
+class Ex1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int item0, item1, item2, item3, item4;
+		String name1,name2,name3,name4;
+		
+		int[] item = new int[5];
+		
+	    int sum;
+	    Scanner input = new Scanner(System.in);
+	    
+	    item[2] = 5;
+	    item[4] = 7;
+	    item[1] = item [2] + item[4];
+	    for (int i=0; i<item.length; i++)
+	    	
+	    System.out.println("Items are : "+ "index" + i + "=" + item[i]);    
+	    
+	    System.out.println("Enter five customer");
+	    
+	    name1=input.next();
+	    name2=input.next();
+	    name3=input.next();
+	    name4=input.next();
+	    
+	    System.out.println("Customer in reverse order");
+	    System.out.println(name4 + " " + name3 + " " + name2 + " " + name1);
+	    
+	    
+	    System.out.println("Enter five integers one number per line");
+	        
+	    item0 = input.nextInt();
+	    item1 = input.nextInt();     
+	    item2 = input.nextInt();
+	    item3 = input.nextInt();
+	    item4 = input.nextInt();
+	        
+	    sum = item0 + item1 + item2 + item3 + item4;
+	        
+	    System.out.println("The sum of the numbers = " + sum);
+	    System.out.println("The numbers in reverse order are: ");
+	    System.out.println(item4 + " " + item3 + " " + item2 + " " + item1 + " " + item0);
+		
+
+	}
+
+}
